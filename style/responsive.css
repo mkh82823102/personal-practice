@@ -1,0 +1,289 @@
+@media screen and (max-width:576px) {
+
+}
+@media screen and (max-width:768px) {
+    .menu{
+        display: flex;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 400ms ease;
+        background-color:#fff;
+    }
+    .menu.active{
+      max-height: 265px;
+    }
+    .menu__item{
+      margin-bottom: 2rem;
+    }
+     .menu__item:first-child{
+      margin-top: 2rem;
+     }
+    .nav__toggle-icon{
+        display: block;
+    }
+    .cover{
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,5%);
+      z-index: -1;
+      opacity: 0;
+      transition: all 400ms ease;
+    }
+    .cover--show{
+      z-index:10 ;
+      opacity: 1;
+    }
+    .home{
+      
+    }
+    .row{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .home__content{
+      margin-top: 5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .services{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+        .services_shape {
+        top: 0;
+        left: 0;
+        transform: none;
+        width: 100%;
+        height: 100%;
+    }
+    .aboutus__photo{
+      position:static;
+      width: 100%;
+    }
+    .contactus__map{
+      --contact-map-height: 40rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .contactus__img{
+      height: var(--contact-map-height);
+    }
+    .contactus__formlist{
+      position: static;
+      transform: none;
+      width: 100%;
+      max-width: 100%;
+      margin-top: 2rem;
+    }
+  }
+@media screen and (max-width:992px) {
+
+    .nav__logo{
+    font-size:4rem ;
+  }
+  .menu__item{
+    margin-right: 2rem;
+  }
+  .menu__link{
+    text-wrap-mode: nowrap;
+  }
+  .home__title{
+    font-size: 2rem;
+  }
+  .home__top-title{
+    font-size: 1.5rem;
+  }
+  .home__photo-bg{
+    max-width: 30rem;
+    height: 30rem;
+  }
+  .home__photo{
+    max-width: 28rem;
+    height: 28rem;
+  }
+  .home__description{
+    font-size: 1rem;
+  }
+  .services__shape{
+        top: 37%;
+        left: 0;
+        transform: none;
+        width: 100%;
+        height: 100%;
+  }
+  .services__icon{
+    z-index: 3;
+  }
+}
+@media screen and (max-width:1200px) {
+
+}
+@media screen and (max-width:350px) {
+    .home__photo-bg{
+      width: 20rem;
+      height: 20rem;
+    }
+    .home__photo{
+      width: 18rem;
+      height: 18rem;
+    }
+    .home__link{
+      padding: 0.5rem 0.8rem;
+      font-size: 1.2rem;
+    }
+    .contactus__icon{
+      width: 6rem;
+      height: 6rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  .resume {
+    padding: 5rem 0;
+  }
+  .resume__layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 3rem;
+  }
+  .resume__nav {
+    width: 100%;
+    max-width: 34rem;
+    margin: 0 auto;
+  }
+  .resume__content {
+    max-width: 54rem;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  html {
+    font-size: 55%;
+  }
+  body {
+    min-width: 0;
+    overflow-x: hidden;
+  }
+  .container {
+    width: 100%;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+  .resume__title {
+    font-size: 3.2rem;
+  }
+  .resume__subtitle {
+    font-size: 1.1rem;
+    letter-spacing: 0.25rem;
+  }
+  .resume__layout {
+    gap: 2.5rem;
+  }
+  .resume__nav {
+    min-height: auto;
+    background: linear-gradient(to right, #0ABEAD 0 2.8rem, rgba(10, 190, 173, 0.08) 2.8rem 100%);
+  }
+  .resume__nav-marker {
+    left: 2.8rem;
+    width: calc(100% - 2.8rem);
+  }
+  .resume__nav-item {
+    gap: 1rem;
+    min-height: 4.4rem;
+    padding-right: 1rem;
+    font-size: 1.25rem;
+  }
+  .resume__nav-icon {
+    flex-basis: 2.8rem;
+    width: 2.8rem;
+    min-width: 2.8rem;
+  }
+  .resume__item {
+    padding-left: 2rem;
+  }
+  .resume__item-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .resume__item-date {
+    min-width: 0;
+  }
+  .resume__item-description {
+    font-size: 1rem;
+  }
+}
+
+/* Resume icons and portfolio 290px fixes */
+.resume__nav-icon-image {
+  display: block;
+  width: 1.35rem;
+  height: 1.35rem;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 350px) {
+  .resume__nav-icon-image {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .portfolio__image-wrapper,
+  .portfolio__grid,
+  .portfolio__card,
+  .portfolio__image {
+    max-width: 100%;
+  }
+
+  .portfolio__list {
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .portfolio__grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+  }
+
+  .portfolio__card {
+    width: 100%;
+    aspect-ratio: auto;
+    overflow: visible;
+  }
+
+  .portfolio__image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+@media screen and (max-width:768px) {
+    .nav{
+        gap: 1.5rem;
+    }
+    .theme-toggle{
+        margin-left: auto;
+        margin-right: 1.5rem;
+    }
+    .menu{
+        background-color: var(--section-bg-color);
+        box-shadow: 0 2rem 4rem rgba(0,0,0,0.12);
+    }
+}
